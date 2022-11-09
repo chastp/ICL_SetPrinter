@@ -11,18 +11,18 @@ Console.WriteLine("GEORGE READY type MOP ON,27(If not loaded) ");
 Console.WriteLine("RESTORE - N ");
 Console.WriteLine("  ");
 
-var myUniqueFileName1 = "C:\\em1900\\data\\" + string.Format(@"{0}.txt", Guid.NewGuid());
-var myUniqueFileName2 = "C:\\em1900\\data\\" + string.Format(@"{0}.txt", Guid.NewGuid());
-if  (Directory.Exists("C:\\em1900\\data\\"))
+var myUniqueFileName1 = "C:\\em1900\\Line_Printer\\" + string.Format(@"{0}.txt", Guid.NewGuid());
+var myUniqueFileName2 = "C:\\em1900\\Line_Printer\\" + string.Format(@"{0}.txt", Guid.NewGuid());
+if  (Directory.Exists("C:\\em1900\\Line_Printer\\"))
 
     {
     using (StreamWriter w = File.AppendText(myUniqueFileName1))
         {
-        Log("C:\\em1900\\data\\lp14.txt", w);
+        Log("C:\\em1900\\Line_Printer\\lp14.txt", w);
         }
     using (StreamWriter w = File.AppendText(myUniqueFileName2))
         {
-        Log("C:\\em1900\\data\\lp15.txt", w);
+        Log("C:\\em1900\\Line_Printer\\lp15.txt", w);
         }
     }
  
